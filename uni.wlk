@@ -5,7 +5,7 @@ class Universidad{
 
 class ProfesionalesVinculadosALaUniversidad{
   var property universidad
-  const property honorarios = universidad.honorariosRecomendados()
+  const property honorarios = universidad.honorarios()
   const property provincia = universidad.provincia()
 }
 

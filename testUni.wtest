@@ -1,9 +1,11 @@
 import uni.*
 
 describe "Test 1" {
+const universidadSanMartin = new Universidad(provincia = buenosAires, honorarios = 3500)
+const profesional1 = new ProfesionalesVinculadosALaUniversidad(universidad = universidadSanMartin)
+
   test "pepita has initial energy" {
-    const universidadSanMartin = new Universidad(provincia = buenosAires, honorarios = 3500)
-    const profesional1 = new ProfesionalesVinculadosALaUniversidad(universidad = universidadSanMartin)
+    
     assert.equals(3500, profesional1.honorarios())
   }
 
