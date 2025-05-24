@@ -21,6 +21,8 @@ class ProfesionalesLibres {
  const property provincia = universidad.provincia()
 }
 
-object buenosAires{
+object buenosAires{ }
 
-}
+object santaFe{ }
+
+object corrientes{ }

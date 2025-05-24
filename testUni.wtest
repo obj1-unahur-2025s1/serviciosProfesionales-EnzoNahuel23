@@ -3,10 +3,31 @@ import uni.*
 describe "Test 1" {
 const universidadSanMartin = new Universidad(provincia = buenosAires, honorarios = 3500)
 const profesional1 = new ProfesionalesVinculadosALaUniversidad(universidad = universidadSanMartin)
-
-  test "pepita has initial energy" {
-    
+  test "de San Martín: está en la provincia de Buenos Aires, los honorarios recomendados son de 3500 pesos." {
     assert.equals(3500, profesional1.honorarios())
   }
-
+}
+describe "Test 2" {
+const universidadDeRosario = new Universidad(provincia = santaFe, honorarios = 2800)
+const profesional2 = new ProfesionalesVinculadosALaUniversidad(universidad = universidadDeRosario)
+  test "de Rosario: está en la provincia de Santa Fe, los honorarios recomendados son de 2800 pesos." {
+    
+    assert.equals(2800, profesional2.honorarios())
+  }
+}
+describe "Test 3" {
+const universidadDeCorrientes = new Universidad(provincia = corrientes, honorarios = 4200)
+const profesional3 = new ProfesionalesVinculadosALaUniversidad(universidad = universidadDeCorrientes)
+  test "de Corrientes: está en la provincia de Corrientes, los honorarios recomendados son de 4200 pesos." {
+    
+    assert.equals(4200, profesional3.honorarios())
+  }
+}
+describe "Test 4" {
+const universidadDeHurlingham = new Universidad(provincia = buenosAires, honorarios = 8800)
+const profesional4 = new ProfesionalesVinculadosALaUniversidad(universidad = universidadDeHurlingham)
+  test "de Hurlingham: está en la provincia de Buenos Aires, los honorarios recomendados son de 8800 pesos." {
+    
+    assert.equals(8800, profesional4.honorarios())
+  }
 }
